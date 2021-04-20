@@ -12,12 +12,11 @@ export class DetalleEscritorComponent implements OnInit {
 
   escritor:Escritor;
   constructor(private activaRoute:ActivatedRoute, private escritoresServide:EscritoresService) { 
-  
-  }
 
+  }
    ngOnInit(){
     this.activaRoute.params.subscribe(async param=>{
-    
+
         this.escritor = await this.escritoresServide.getId(parseInt(param.escritorId));
     })
   }

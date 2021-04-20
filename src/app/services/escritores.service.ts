@@ -36,10 +36,7 @@ export class EscritoresService {
     })   
   }
 
-  
   getId(escritorId):Promise<Escritor>{
-    console.log(escritorId);
-
     return new Promise((resolve,reject)=>resolve(ESCRITORES.find(element=>element.id == escritorId)));
   }
 }

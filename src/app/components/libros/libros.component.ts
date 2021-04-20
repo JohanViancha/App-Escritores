@@ -13,12 +13,14 @@ export class LibrosComponent implements OnInit {
 
 
   arrayLibro:Libro[];
+  style=["background:red"]
   constructor(private activaRoute: ActivatedRoute, private libroServices: LibrosService) { }
 
 
   ngOnInit(): void {
 
     this.activaRoute.parent.params.subscribe(async params=>{
+       
        this.arrayLibro = await this.libroServices.getLibrosEscritor(params.escritorId);
     })
 
