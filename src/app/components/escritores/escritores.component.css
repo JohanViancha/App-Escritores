@@ -1,0 +1,47 @@
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.contenedor-escritor{
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+.contenedor-escritor:hover{
+
+    opacity: 0.7;
+}
+
+.contenedor-escritor img{
+    border-radius: 5px;
+}
+
+.contenedor-escritor h2{
+    border:3px solid rgb(15, 147, 255);
+    border-radius: 5px;
+    padding: 5px;
+ 
+}
+
+.contenedor-filter{
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 30%;
+    padding: 15px;
+    text-align: center;
+}
+
+.contenedor-filter select{
+    width: 50%;
+    height: 40%;
+    padding: 10px;
+    outline: none;
+}

@@ -1,0 +1,19 @@
+
+<div class="contenedor-filter">
+    <select (change)="filtraPorPais($event)" name="" id="">
+        <option value="Todos">Todos</option>
+        <option *ngFor="let pais of arrPai" value={{pais}}>
+            {{pais}}
+        </option>
+    </select>
+
+</div>
+<div class="contenedor">
+
+    <div class="contenedor-escritor" *ngFor="let escritor of arrEsc">
+        <h2>{{escritor.nombre}}</h2>
+        <img width="200px" height="300px" [src]=escritor.imagen alt="Foto">
+        <p>{{escritor.pais}}</p>
+    </div>
+
+</div>
