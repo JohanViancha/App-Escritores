@@ -47,7 +47,7 @@ export const LIBROS: Libro[] = [
         id: 7,
         titulo: 'El prisionero del cielo',
         publicado: 2011,
-        imagen: 'https://static.fnac-static.com/multimedia/ES/images_produits/ES/ZoomPE/4/2/8/9788408105824/tsp20121116141549/El-prisionero-del-cielo.jpg',
+        imagen: 'https://images-na.ssl-images-amazon.com/images/I/91He6le7OUL.jpg',
         escritor: 4
     },
     {

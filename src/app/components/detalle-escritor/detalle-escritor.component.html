@@ -1,0 +1,15 @@
+
+<button [routerLink]="['../../']" class="btn btn-volver">Volver</button>
+<div class="escritor">
+<h2>{{escritor?.nombre}}</h2>
+<p>{{escritor?.apellidos}}</p>
+<img width="200px" height="300px" [src]=escritor?.imagen alt="">
+<p>{{escritor?.pais}}</p>
+</div>
+
+<div class="ver-libros">
+<button [routerLink]="['libros']" class="btn btn-libros">Ver libros</button>
+</div>
+
+
+<router-outlet></router-outlet>

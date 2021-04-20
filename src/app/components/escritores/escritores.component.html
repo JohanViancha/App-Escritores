@@ -10,10 +10,12 @@
 </div>
 <div class="contenedor">
 
-    <div class="contenedor-escritor" *ngFor="let escritor of arrEsc">
+    <div class="contenedor-escritor" *ngFor="let escritor of arrEsc" [routerLink]="['/escritores',escritor.id]">
         <h2>{{escritor.nombre}}</h2>
         <img width="200px" height="300px" [src]=escritor.imagen alt="Foto">
         <p>{{escritor.pais}}</p>
     </div>
+
+   
 
 </div>

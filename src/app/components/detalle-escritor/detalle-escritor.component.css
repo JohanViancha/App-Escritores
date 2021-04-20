@@ -1,0 +1,36 @@
+.escritor{
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+    border: 3px solid gray;
+    text-align: center;
+    margin: auto;
+}
+
+.ver-libros{
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.btn{
+    width: 120px;
+    height: 30px;
+    font-size: medium;
+    border: 0px;
+    border-radius:6px;
+    color: #FFF;
+    cursor: pointer;
+    outline: none;
+}
+.btn-libros{
+    background-color: rgb(15, 147, 255);; 
+}
+
+.btn-volver{
+    background-color: rgb(100, 100, 100);
+}
+
+.btn:hover{
+    opacity: 0.7;
+}
+

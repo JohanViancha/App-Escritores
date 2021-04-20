@@ -32,15 +32,14 @@ export class EscritoresService {
 
   filtraPorPais(pais:string):Promise<Escritor[]>{
     return new Promise((resolve, reject)=>{
-      if(pais == 'Todos'){
-        resolve(ESCRITORES);
-      }else{
-        let escritorPorPais:Escritor[] = ESCRITORES.filter(element=>element.pais == pais);
-        resolve(escritorPorPais);
-      }
-      
-    })
-    
-    
+      pais == 'Todos'?resolve(ESCRITORES):resolve(ESCRITORES.filter(element=>element.pais == pais));    
+    })   
+  }
+
+  
+  getId(escritorId):Promise<Escritor>{
+    console.log(escritorId);
+
+    return new Promise((resolve,reject)=>resolve(ESCRITORES.find(element=>element.id == escritorId)));
   }
 }

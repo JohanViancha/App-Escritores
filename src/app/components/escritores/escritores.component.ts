@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Escritor } from 'src/app/models/escritor.model';
 import { EscritoresService } from 'src/app/services/escritores.service';
 
@@ -11,7 +12,7 @@ export class EscritoresComponent implements OnInit {
 
   arrEsc:Escritor[];
   arrPai:string[];
-  constructor(private escritoresServide:EscritoresService) { }
+  constructor(private escritoresServide:EscritoresService, private router: Router) { }
 
   async ngOnInit() {
 
@@ -26,8 +27,11 @@ export class EscritoresComponent implements OnInit {
   }
 
   async filtraPorPais($event){
-    
     this.arrEsc = await this.escritoresServide.filtraPorPais($event.target.value);
+  }
+
+  verEscritor($event){
+    
   }
 
 

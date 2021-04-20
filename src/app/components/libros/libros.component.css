@@ -1,0 +1,11 @@
+.contenedor-libros{
+    display: flex;
+    justify-content: center;
+}
+.libro{
+    margin: 0px 10px;
+}
+
+.libros{
+    text-align: center;
+}
